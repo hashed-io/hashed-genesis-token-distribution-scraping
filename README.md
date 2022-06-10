@@ -18,3 +18,15 @@ source virtual_environment_name/bin/activate
 install all requirements
 
 
+## Run the spider
+
+To debug the spider, run the following command
+``` bash
+scrapy crawl GenesisToken
+```
+
+
+To save data of the spider, run the following command
+``` bash
+scrapy crawl GenesisToken -O token_info.json
+```

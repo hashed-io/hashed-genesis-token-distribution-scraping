@@ -20,7 +20,7 @@ class GenesisToken(scrapy.Spider):
     def parse(self, response):
         self.logger.info('In parse info')
 
-        item = ItemLoader()
+        item = SrcItem()
         # h4 mb-0 d-flex flex-wrap align-items-center
         token_name = response.css('div').re('.*h3.*')
         self.logger.info("dirty name")
@@ -30,6 +30,8 @@ class GenesisToken(scrapy.Spider):
         token_name = token_name.replace("</h1>", "")
 
         self.logger.info(token_name)
+
+        item["name"] = token_name
 
         # delete the first 4 elements on those variables
         market_supply = response.css('div.row.tokenomic_row')[2].re('\d+')
@@ -47,3 +49,5 @@ class GenesisToken(scrapy.Spider):
         token_dist = "{" + token_dist + "}"
         token_dist = json.loads(token_dist) # details json var
         self.logger.info(market_supply)
+
+        yield item
