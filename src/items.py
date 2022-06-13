@@ -10,6 +10,18 @@ from scrapy.loader import ItemLoader
 from itemloaders.processors import TakeFirst, MapCompose
 from w3lib.html import remove_tags
 
+def format_item(value):
+    output = ""
+
+    value.pop(0)
+    value.pop(0)
+    value.pop(0)
+    value.pop(0)
+
+    for k in len(value):
+        output += value[k]
+
+    return output
 
 
 class SrcItem(scrapy.Item):
@@ -28,6 +40,10 @@ class SrcItem(scrapy.Item):
     # subProductName = scrapy.Field()
     # subProductPrice = scrapy.Field()
     name = scrapy.Field()
-    market_supply = scrapy.Field()
+    market_supply = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
     circulation_supply = scrapy.Field()
     market_cap = scrapy.Field()
+
+    token_distribution = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
+
+    link = scrapy.Field()
