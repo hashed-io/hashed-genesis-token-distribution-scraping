@@ -34,7 +34,7 @@ scrapy crawl GenesisToken
 ```
 
 
-To save data of the spider, run the following command
+To save data of the spider, run the following command (this overwrites the previous file, run with -o to append the info to the old file)
 ``` bash
 scrapy crawl GenesisToken -O token_info.json
 ```
