@@ -9,17 +9,28 @@ from scrapy.loader import ItemLoader
 # parachain_text
 
 def format_item(value):
-    output = ""
+    if value:
+        output = ""
 
-    value.pop(0)
-    value.pop(0)
-    value.pop(0)
-    value.pop(0)
+        value.pop(0)
+        value.pop(0)
+        value.pop(0)
+        value.pop(0)
 
-    for k in value:
-        output += k
+        for k in value:
+            output += k
 
-    return output
+        return output
+
+    else:
+        return value
+
+def format_text(value, dirty, format):
+    if value:
+        return value.replace(dirty, format)
+    
+    else:
+        return ""
 
 class GenesisToken(scrapy.Spider):
 	
@@ -27,48 +38,48 @@ class GenesisToken(scrapy.Spider):
     allowed_domains = ['parachains.info']
 
     def start_requests(self):
-        urls = [
-            'https://parachains.info/details/dora_factory#token',
-            'https://parachains.info/details/acala_network#token'
-            # 'https://parachains.info/details/karura#token',
-            # 'https://parachains.info/details/bit_country_pioneer#token',
-            # 'https://parachains.info/details/shiden_network#token',
-            # 'https://parachains.info/details/astar#token',
-            # 'https://parachains.info/details/bifrost_finance#token',
-            # 'https://parachains.info/details/bifrost_finance_polkadot#token',
-            # 'https://parachains.info/details/pichiu#token',
-            # 'https://parachains.info/details/equilibrium#token',
-            # 'https://parachains.info/details/genshiro#token',
-            # 'https://parachains.info/details/nodle#token',
-            # 'https://parachains.info/details/crust_shadow#token',
-            # 'https://parachains.info/details/calamari_network#token',
-            # 'https://parachains.info/details/parallel_finance#token',
-            # 'https://parachains.info/details/heiko_finance#token',
-            # 'https://parachains.info/details/centrifuge#token',
-            # 'https://parachains.info/details/moonbeam#token'
-            ]
-
         # urls = [
-        #     'https://parachains.info/details/moonriver#token',
-        #     'https://parachains.info/details/altair#token',
-        #     'https://parachains.info/details/litentry#token',
-        #     'https://parachains.info/details/litmus#token',
-        #     'https://parachains.info/details/integritee#token',
-        #     'https://parachains.info/details/unique_network#token',
-        #     'https://parachains.info/details/subsocial#token',
-        #     'https://parachains.info/details/khala#token',
-        #     'https://parachains.info/details/phala_network#token',
-        #     'https://parachains.info/details/hydradx#token',
-        #     'https://parachains.info/details/turing_network#token',
-        #     'https://parachains.info/details/darwinia_crab#token',
-        #     'https://parachains.info/details/interlay#token',
-        #     'https://parachains.info/details/kintsugi#token',
-        #     'https://parachains.info/details/basilisk#token',
-        #     'https://parachains.info/details/quartz#token',
-        #     'https://parachains.info/details/kilt_protocol#token',
-        #     'https://parachains.info/details/robonomics#token',
-        #     'https://parachains.info/details/sora#token',
-        #     'https://parachains.info/details/encointer#token']
+        #     'https://parachains.info/details/dora_factory#token',
+        #     'https://parachains.info/details/acala_network#token'
+        #     'https://parachains.info/details/karura#token',
+        #     'https://parachains.info/details/bit_country_pioneer#token',
+        #     'https://parachains.info/details/shiden_network#token',
+        #     'https://parachains.info/details/astar#token',
+        #     'https://parachains.info/details/bifrost_finance#token',
+        #     'https://parachains.info/details/bifrost_finance_polkadot#token',
+        #     'https://parachains.info/details/pichiu#token',
+        #     'https://parachains.info/details/equilibrium#token',
+        #     'https://parachains.info/details/genshiro#token',
+        #     'https://parachains.info/details/nodle#token',
+        #     'https://parachains.info/details/crust_shadow#token',
+        #     'https://parachains.info/details/calamari_network#token',
+        #     'https://parachains.info/details/parallel_finance#token',
+        #     'https://parachains.info/details/heiko_finance#token',
+        #     'https://parachains.info/details/centrifuge#token',
+        #     'https://parachains.info/details/moonbeam#token'
+        #     ]
+
+        urls = [
+            'https://parachains.info/details/moonriver#token',
+            'https://parachains.info/details/altair#token',
+            'https://parachains.info/details/litentry#token',
+            'https://parachains.info/details/litmus#token',
+            'https://parachains.info/details/integritee#token',
+            'https://parachains.info/details/unique_network#token',
+            'https://parachains.info/details/subsocial#token',
+            'https://parachains.info/details/khala#token',
+            'https://parachains.info/details/phala_network#token',
+            'https://parachains.info/details/hydradx#token',
+            'https://parachains.info/details/turing_network#token',
+            'https://parachains.info/details/darwinia_crab#token',
+            'https://parachains.info/details/interlay#token',
+            'https://parachains.info/details/kintsugi#token',
+            'https://parachains.info/details/basilisk#token',
+            'https://parachains.info/details/quartz#token',
+            'https://parachains.info/details/kilt_protocol#token',
+            'https://parachains.info/details/robonomics#token',
+            'https://parachains.info/details/sora#token',
+            'https://parachains.info/details/encointer#token']
 
         # urls = [
         #     'https://parachains.info/details/picasso#token',
@@ -186,43 +197,58 @@ class GenesisToken(scrapy.Spider):
         self.logger.info(token_name)
 
         item["name"] = token_name
-
         item["relay_chain"] = response.css("div.parachain_text::text").get().replace("\n", "")
+        item["link"] = response.url
 
-        # response.css("div.parachain_text::text").get()
-
-        # delete the first 4 elements on those variables
-        market_supply = response.css('div.row.tokenomic_row')[2].re('\d+')
-        circulation_supply = response.css('div.row.tokenomic_row')[3].re('\d+')
-        market_cap = response.css('div.row.tokenomic_row')[4].re('\d+') # market cap
-
-
-        self.logger.info("dirty market_supply")
-        self.logger.info(market_supply)
-
-        item["market_supply"] = format_item(market_supply)
-
-        self.logger.info("dirty circulation_supply")
-        self.logger.info(circulation_supply)
-
-        item["circulation_supply"] = format_item(circulation_supply)
-
-        self.logger.info("dirty market_cap")
-        self.logger.info(market_cap)
-
-        item["market_cap"] = format_item(market_cap)
-
-        pattern = r'dataset: {[\r\n]+([^\r\n]+)' # there is a variable in the script with this pattern
-        token_dist = response.css('script::text').re_first(pattern) # get the data with the pattern
-
-        # making sure the output is a JSON
-        token_dist = token_dist.replace(" ", "")
-        token_dist = token_dist.replace("source", "\"source\"")
-        token_dist = "{" + token_dist + "}"
-        token_dist = json.loads(token_dist) # details json var
-
-        self.logger.info(token_dist["source"])
-
-        item["token_distribution"] = token_dist["source"]
+        try:
+            market_supply = response.css('div.row.tokenomic_row')[2].re('\d+')
         
+            self.logger.info("dirty market_supply")
+            self.logger.info(market_supply)
+
+            item["market_supply"] = format_item(market_supply)
+        except:
+            item["market_supply"] = 0
+
+        try:
+            circulation_supply = response.css('div.row.tokenomic_row')[3].re('\d+')
+
+            self.logger.info("dirty circulation_supply")
+            self.logger.info(circulation_supply)
+
+            item["circulation_supply"] = format_item(circulation_supply)
+
+        except:
+            item["circulation_supply"] = "0"
+
+
+        try:
+            market_cap = response.css('div.row.tokenomic_row')[4].re('\d+') # market cap
+
+            self.logger.info("dirty market_cap")
+            self.logger.info(market_cap)
+
+            item["market_cap"] = format_item(market_cap)
+
+        except:
+            item["market_cap"] = 0
+
+        try:
+            pattern = r'dataset: {[\r\n]+([^\r\n]+)' # there is a variable in the script with this pattern
+            token_dist = response.css('script::text').re_first(pattern) # get the data with the pattern
+
+            token_dist = format_text(token_dist, " ", "")
+            # making sure the output is a JSON
+            token_dist = token_dist.replace(" ", "")
+            token_dist = token_dist.replace("source", "\"source\"")
+            token_dist = "{" + token_dist + "}"
+            token_dist = json.loads(token_dist) # details json var
+
+            self.logger.info(token_dist["source"])
+
+            item["token_distribution"] = token_dist["source"]
+
+        except:
+            item["token_distribution"] = []
+
         yield item

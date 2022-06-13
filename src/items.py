@@ -25,20 +25,6 @@ def format_item(value):
 
 
 class SrcItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    # category = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
-    # subcategory = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
-
-    # product_key = scrapy.Field()
-    # name = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
-    # link = scrapy.Field()
-    # price = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
-
-    # weight = scrapy.Field()
-    # stock = scrapy.Field()
-    # subProductName = scrapy.Field()
-    # subProductPrice = scrapy.Field()
     name = scrapy.Field()
     relay_chain = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
     market_supply = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
