@@ -17,7 +17,15 @@ source virtual_environment_name/bin/activate
 
 install all requirements
 
+``` bash
+pip install -r requirements.txt
+```
 
+or 
+
+``` bash
+pip3 install -r requirements.txt
+```
 ## Run the spider
 
 To debug the spider, run the following command
