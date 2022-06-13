@@ -40,6 +40,7 @@ class SrcItem(scrapy.Item):
     # subProductName = scrapy.Field()
     # subProductPrice = scrapy.Field()
     name = scrapy.Field()
+    relay_chain = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
     market_supply = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
     circulation_supply = scrapy.Field()
     market_cap = scrapy.Field()
