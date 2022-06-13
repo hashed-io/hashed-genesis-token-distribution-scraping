@@ -142,3 +142,4 @@ cython_debug/
 # Some local files
 *.json
 *.csv
+.vscode
