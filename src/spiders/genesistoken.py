@@ -59,27 +59,27 @@ class GenesisToken(scrapy.Spider):
         #     'https://parachains.info/details/moonbeam#token'
         #     ]
 
-        urls = [
-            'https://parachains.info/details/moonriver#token',
-            'https://parachains.info/details/altair#token',
-            'https://parachains.info/details/litentry#token',
-            'https://parachains.info/details/litmus#token',
-            'https://parachains.info/details/integritee#token',
-            'https://parachains.info/details/unique_network#token',
-            'https://parachains.info/details/subsocial#token',
-            'https://parachains.info/details/khala#token',
-            'https://parachains.info/details/phala_network#token',
-            'https://parachains.info/details/hydradx#token',
-            'https://parachains.info/details/turing_network#token',
-            'https://parachains.info/details/darwinia_crab#token',
-            'https://parachains.info/details/interlay#token',
-            'https://parachains.info/details/kintsugi#token',
-            'https://parachains.info/details/basilisk#token',
-            'https://parachains.info/details/quartz#token',
-            'https://parachains.info/details/kilt_protocol#token',
-            'https://parachains.info/details/robonomics#token',
-            'https://parachains.info/details/sora#token',
-            'https://parachains.info/details/encointer#token']
+        # urls = [
+        #     'https://parachains.info/details/moonriver#token',
+        #     'https://parachains.info/details/altair#token',
+        #     'https://parachains.info/details/litentry#token',
+        #     'https://parachains.info/details/litmus#token',
+        #     'https://parachains.info/details/integritee#token',
+        #     'https://parachains.info/details/unique_network#token',
+        #     'https://parachains.info/details/subsocial#token',
+        #     'https://parachains.info/details/khala#token',
+        #     'https://parachains.info/details/phala_network#token',
+        #     'https://parachains.info/details/hydradx#token',
+        #     'https://parachains.info/details/turing_network#token',
+        #     'https://parachains.info/details/darwinia_crab#token',
+        #     'https://parachains.info/details/interlay#token',
+        #     'https://parachains.info/details/kintsugi#token',
+        #     'https://parachains.info/details/basilisk#token',
+        #     'https://parachains.info/details/quartz#token',
+        #     'https://parachains.info/details/kilt_protocol#token',
+        #     'https://parachains.info/details/robonomics#token',
+        #     'https://parachains.info/details/sora#token',
+        #     'https://parachains.info/details/encointer#token']
 
         # urls = [
         #     'https://parachains.info/details/picasso#token',
@@ -169,6 +169,60 @@ class GenesisToken(scrapy.Spider):
         #     'https://parachains.info/details/chainlink#token',
         #     'https://parachains.info/details/subquery#token'
         #   ]
+
+        # urls = [
+        #     'https://parachains.info/details/joystream#token',
+        #     'https://parachains.info/details/bluzelle#token',
+        #     'https://parachains.info/details/reef#token',
+        #     'https://parachains.info/details/riodefi#token',
+        #     'https://parachains.info/details/tidal_finance#token',
+        #     'https://parachains.info/details/linear#token',
+        #     'https://parachains.info/details/mxc#token',
+        #     'https://parachains.info/details/covercompared#token',
+        #     'https://parachains.info/details/paralink_network#token',
+        #     'https://parachains.info/details/gear#token',
+        #     'https://parachains.info/details/etha_lend#token',
+        #     'https://parachains.info/details/fractal#token',
+        #     'https://parachains.info/details/royale#token',
+        #     'https://parachains.info/details/automata#token',
+        #     'https://parachains.info/details/mantraDAO#token',
+        #     'https://parachains.info/details/exeedme#token',
+        #     'https://parachains.info/details/edgeware#token',
+        #     'https://parachains.info/details/chainx#token',
+        #     'https://parachains.info/details/mangata_finance#token',
+        #     'https://parachains.info/details/bondly#token']
+        
+        # urls = [
+        #     'https://parachains.info/details/rai_finance#token',
+        #     'https://parachains.info/details/bandot#token',
+        #     'https://parachains.info/details/energy_web#token',
+        #     'https://parachains.info/details/gamedao#token',
+        #     'https://parachains.info/details/oax_foundation#token',
+        #     'https://parachains.info/details/polkabridge#token',
+        #     'https://parachains.info/details/xpredict#token',
+        #     'https://parachains.info/details/momentum#token',
+        #     'https://parachains.info/details/compound_gateway#token',
+        #     'https://parachains.info/details/kulupu#token',
+        #     'https://parachains.info/details/bitgreen#token',
+        #     'https://parachains.info/details/peaq#token',
+        #     'https://parachains.info/details/map_protocol#token',
+        #     'https://parachains.info/details/seor#token',
+        #     'https://parachains.info/details/acuity_social#token',
+        #     'https://parachains.info/details/bestay#token',
+        #     'https://parachains.info/details/sunrise_protocol#token',
+        #     'https://parachains.info/details/everlife_ai#token',
+        #     'https://parachains.info/details/summa_network#token',
+        #     'https://parachains.info/details/dego_finance#token']
+        
+        urls =[
+            'https://parachains.info/details/shift#token',
+            'https://parachains.info/details/curio#token',
+            'https://parachains.info/details/hazel#token',
+            'https://parachains.info/details/cdot#token',
+            'https://parachains.info/details/wiv#token',
+            'https://parachains.info/details/polimec#token',
+            'https://parachains.info/details/pulse_network#token' ]
+
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
