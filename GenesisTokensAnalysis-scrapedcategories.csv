@@ -1,0 +1,263 @@
+Scraped Label,Category,Subcategory
+"EcosystemDev",Budgets,Ecosystem
+"FoundationReserver",Reserve,Reserve
+"Backers",Investors,Second Round
+"FoundingTeam",Founders,Founders
+"EarlyBackers",Investors,Seed Round
+"ParachainCrowdloanFund",Parachain,Crowdloan
+"PLOReserve",Parachain,Auctions
+"CommunityRewards",Budgets,Community
+"LockDropRewards",Budgets,Community
+"HoldersReward",Budgets,Community
+"MarketingFund",Budgets,Marketing
+"LiquidityFund",Liquidity,Liquidity
+"DeveloperFund",Budgets,Developers
+"PolkadotCrowdloan",Parachain,Crowdloan
+"KusamaCrowdloan",Parachain,Crowdloan
+"vTokenMintIncentive",Budgets,Ecosystem
+"CollatorIncentive",Budgets,Ecosystem
+"SlashInsuranceFund",Budgets,Ecosystem
+"FounderandTeam",Founders,Founders
+"SeedRoundI",Investors,Seed Round
+"SeedRoundII",Investors,Seed Round
+"StrategicRound",Investors,Second Round
+"PrivateRound",Investors,Second Round
+"Marketing&CommunityBuild",Budgets,Marketing
+"MintDrop",Budgets,Ecosystem
+"Treasury(Foundation)",Reserve,Reserve
+"Crowdloan",Parachain,Crowdloan
+"DistributiontoEQHolders",Budgets,Community
+"LiquidityFarming",Liquidity,Liquidity
+"EQStakingBonus",Budgets,Community
+"Treasury",Reserve,Reserve
+"Parachain",Parachain,Crowdloan
+"Investors",Investors,Seed Round
+"Team",Founders,Founders
+"NUT/EQTokenSwap",Budgets,Community
+"Ecosystem",Budgets,Ecosystem
+"Founders&Team",Founders,Founders
+"SeedRound",Investors,Seed Round
+"Foundation",Reserve,Reserve
+"PrivateSale",Investors,Seed Round
+"Marketing",Budgets,Marketing
+"EarlyInvestrors",Investors,Seed Round
+"Companyreserve",Reserve,Reserve
+"Offering",Investors,Second Round
+"ServiceProviders",Budgets,Developers
+"EcosystemUn-mined",Budgets,Ecosystem
+"PLOSupply",Parachain,Auctions
+"LockdropMA",Budgets,Community
+"LiquidityMining",Liquidity,Liquidity
+"DevFund",Budgets,Developers
+"PrivateInvestorsSeed",Investors,Seed Round
+"FoundingGroup",Founders,Founders
+"PublicSales",Investors,Second Round
+"FuturePrivateInvestors",Investors,Second Round
+"TreasureReserve",Reserve,Reserve
+"SeedFunding",Investors,Seed Round
+"StrategicFunding",Investors,Second Round
+"TakeFlightEvent",Budgets,Ecosystem
+"Development",Budgets,Developers
+"LiquidityPrograms",Liquidity,Liquidity
+"FoundersandEarlyEmployees",Founders,Founders
+"Other",Reserve,Reserve
+"CommunityAirdrop",Budgets,Community
+"CRULiquidity",Liquidity ,Liquidity
+"ReserveforPromotion",Reserve,Reserve
+"ParachainAuctions",Parachain,Auctions
+"ParachainAuctionReserve",Parachain,Auctions
+"ProtocolDevelopment",Budgets,Developers
+"OnChainDAO",Reserve,Reserve
+"ExistingUsers",Budgets,Ecosystem
+"ParachainAuctionin2021",Parachain,Auctions
+"UsersandEarlyAdapter",Budgets,Ecosystem
+"ParachainAuctionsReserve",Parachain,Auctions
+"On-ChainDAO",Reserve,Reserve
+"InsuranceFund",Budgets,Ecosystem
+"SeedInvestors",Investors,Seed Round
+"PrivateInvestors",Investors,Second Round
+"Team&Advisors",Founders,Founders
+"CoreContributors",Founders,Founders
+"FoundationEndowment",Reserve,Reserve
+"DevelopmentGrants",Budgets,Developers
+"TotalBackers",Investors,Seed Round
+"EarlyEcosystem",Budgets,Ecosystem
+"Rewards&Grants",Budgets,Ecosystem
+"CommunitySale",Investors,Second Round
+"CommunityGrants",Budgets,Ecosystem
+"AIRCrowdloanRewards",Parachain,Crowdloan
+"CommunityRewardsReserve",Budgets,Community
+"EcosystemDevelopment",Budgets,Ecosystem
+"CFGSnapshot",Budgets,Community
+"NetworkRewards",Budgets,Ecosystem
+"ParachainCrowdloan",Parachain,Crowdloan
+"SlotReserve",Parachain,Auctions
+"ParachainBondReserve",Parachain,Auctions
+"Adoption",Budgets,Ecosystem
+"DeveloperAdoptionProgram",Budgets,Developers
+"PublicSale",Investors,Second Round
+"Angel",Investors,Seed Round
+"SeedSale",Investors,Seed Round
+"StrategicSale",Investors,Second Round
+"BinanceLaunchpool",Liquidity,Liquidity
+"FutureCrowdloans",Parachain,Crowdloan
+"EarlyAdopter",Budgets,Ecosystem
+"Founders",Founders,Founders
+"InitialCrowdloan",Parachain,Crowdloan
+"PrivateSales",Investors,Seed Round
+"Advisors&Team",Founders,Founders
+"Airdrops&Claims",Budgets,Community
+"1stcrowdloan",Parachain,Crowdloan
+"Crowdloanin-protocolrewards",Parachain,Crowdloan
+"Crowdloanreserve",Parachain,Crowdloan
+"LPrewards",Liquidity,Liquidity
+"Ecosystemreserve",Budgets,Ecosystem
+"RainyDayReserve",Reserve,Reserve
+"VaultRewards",Budgets,Ecosystem
+"Stake-to-Vote",Budgets,Community
+"Team&Investors",Founders,Founders
+"ParachainOffering",Parachain,Crowdloan
+"BasiliskLBP",Liquidity,Liquidity
+"BasiliskTeam&Stewards",Founders,Founders
+"CommunityTreasury",Budgets,Community
+"AirdroptoActiveKSMwallets",Budgets,Community
+"LiquidityMinning&CollatorRewards",Liquidity,Liquidity
+"HDXHolders",Budgets,Community
+"IncentivizedStakenet",Budgets,Community
+"LBP",Liquidity,Liquidity
+"Founders,Investors&Advisors",Founders,Founders
+"LiquidityProvision&StakingRewards",Liquidity,Liquidity
+"Stakedrop&InitialParachainOffering",Parachain,Crowdloan
+"TestnetIncentive",Budgets,Developers
+"DeveloperIncentive",Budgets,Developers
+"TEEMining",Budgets,Ecosystem
+"CrowdloanReward",Parachain,Crowdloan
+"DeveloperIncentives",Budgets,Developers
+"EcosystemGrowth",Budgets,Ecosystem
+"StrategicPartnerships",Investors,Second Round
+"InitialCollatorFund",Budgets,Ecosystem
+"FutureParachainReserve",Parachain,Auctions
+"CommunityDAO",Budgets,Community
+"StakingRewards",Budgets,Community
+"Team&EarlyBackers",Founders,Founders
+"Foundationreserve",Reserve,Reserve
+"CrowdloanReserve",Parachain,Crowdloan
+"ContributorsGrant",Budgets,Developers
+"EcosystemDev&FutureParachain",Budgets,Ecosystem
+"EarlyRound",Investors,Seed Round
+"NominatorStaking&Pools",Budgets,Ecosystem
+"Company",Reserve,Reserve
+"ParachainLease(forthefirst6years)",Parachain,Auctions
+"TeamandAdvisors",Founders,Founders
+"ZeitgeistFoundation",Reserve,Reserve
+"MarketingIncentives",Budgets,Marketing
+"ShapetheFuture",Reserve,Reserve
+"Parachainauction",Parachain,Auctions
+"Advisors",Founders,Founders
+"CommunityRound",Investors,Second Round
+"Privateround",Investors,Second Round
+"Strategicround",Investors,Second Round
+"Seedround",Investors,Seed Round
+"Foundersandteam",Founders,Founders
+"Auction",Parachain,Auctions
+"Community",Budgets,Community
+"Kick-startingincentivisationpools",Budgets,Ecosystem
+"Airdrop",Budgets,Community
+"Founders&Foundation",Founders,Founders
+"Market",Budgets,Marketing
+"R&Dteam",Founders,Founders
+"ICOmining",Budgets,Community
+"Treasury&Reserve",Reserve,Reserve
+"PublicWhitelist",Budgets,Community
+"KeyPartners&Advisors",Founders,Founders
+"Liquidity",Liquidity,Liquidity
+"Strategic",Investors,Second Round
+"AuctionReward",Parachain,Auctions
+"TokenSale",Investors,Second Round
+"Founder&Team",Founders,Founders
+"Advisor",Founders,Founders
+"Treasury&Reserves",Reserve,Reserve
+"EarlyContributors",Investors,Seed Round
+"ProtocolEmissions",Budgets,Ecosystem
+"Crowdloans",Parachain,Crowdloan
+"PolkaVaultStrategy",Budgets,Ecosystem
+"DeveloperAdvocateFund",Budgets,Developers
+"CrowdloanFund",Parachain,Crowdloan
+"ValidationRewards",Budgets,Ecosystem
+"LPRewards",Liquidity,Liquidity
+"InvestorsandFoundation",Investors,Second Round
+"R&DTeam",Founders,Founders
+"Airdrops",Budgets,Community
+"DappDeploymentHostingReward",Budgets,Ecosystem
+"ParachainCrowdloans",Parachain,Crowdloan
+"EcoTreasury&Marketing",,
+"CollatorNodeReward",Budgets,Ecosystem
+"Crowdloan&Pledge",Parachain,Crowdloan
+"Development&EngineeringGrants",Budgets,Developers
+"CurrentTeam",Founders,Founders
+"FutureTeam",Budgets,Developers
+"Referrals&Airdrops",Budgets,Community
+"PolkadotCommunity",Budgets,Community
+"Treasury&PalletGrants",Budgets,Developers
+"LAYRStakers",Budgets,Community
+"ParachainLease",Parachain,Auctions
+"EcosystemPrograms",Budgets,Ecosystem
+"MetaverseFoundation",Reserve,Reserve
+"GovernanceMining",Budgets,Ecosystem
+"TokenforSale",Investors,Second Round
+"MintMining",Budgets,Community
+"AvailableforSale",Investors,Second Round
+"Team&Advisor",Founders,Founders
+"PlatformIncentive",Budgets,Ecosystem
+"Reserve",Reserve,Reserve
+"CrowdloanAirdrop(ParachainIncentive)",Parachain,Crowdloan
+"YieldFarmingDistribution",Liquidity,Liquidity
+"Seed",Investors,Seed Round
+"Private",Investors,Second Round
+"PublicIDO",Investors,Second Round
+"EcosystemPartnersAndAdvisors",Budgets,Ecosystem
+"CommunityIncentive",Budgets,Community
+"Validator(GrantDeveloper)",Budgets,Developers
+"CommunityDeveloper",Budgets,Community
+"EcosystemIncentive",Budgets,Ecosystem
+"MinerIncentive",Budgets,Ecosystem
+"FoundationReserve",Reserve,Reserve
+"ParachainBondFunding",Parachain,Auctions
+"MiningIncentive",Budgets,Ecosystem
+"ParachainSlot",Parachain,Auctions
+"Communitydevelopment",Budgets,Community
+"BD&Marketing",Budgets,Marketing
+"FoundationReservation",Reserve,Reserve
+"ParachainReserve",Parachain,Auctions
+"Dev-Fund",Budgets,Developers
+"Financing",Investors,Second Round
+"Consultants",Budgets,Developers
+"AresFoundation",Reserve,Reserve
+"AresPledgeMining",Budgets,Community
+"PrivatePlacement",Investors,Second Round
+"AresEcologicalConsruction",Budgets,Ecosystem
+"NetworkIncentives",Budgets,Community
+"LiquidityProvisions",Liquidity,Liquidity
+"InstitutionalInvestment",Investors,Second Round
+"ExternalDevelopment",Budgets,Developers
+"TechnologyDevelopment",Budgets,Developers
+"CommunityMedia",Budgets,Marketing
+"EcologicalIncentive",Budgets,Ecosystem
+"CrowdloanRewards",Parachain,Crowdloan
+"ParachainSlotReserve",Parachain,Auctions
+"ParachainR&D",Budgets,Developers
+"DeveloperOutreach",Budgets,Developers
+"ParachainRewards",Parachain,Crowdloan
+"Team,EarlyInvestors&Advisors",Founders,Founders
+"Marketing&Listing",Budgets,Marketing
+"LockDropInvestor",Budgets,Community
+"MathVaultPool",Budgets,Ecosystem
+"ProfessionalInvestor",Investors,Second Round
+"AuctionIncentives",Parachain,Crowdloan
+"PCXHolders",Budgets,Community
+"CIDNFTMining",Budgets,Community
+"Council",Founders,Founders
+"Giveaway",Budgets,Ecosystem 
+"Treasure&Reserves",Reserve,Reserve
+"ProtocolReserve",Reserve,Reserve
+"StrategicPartners&Advisors",Investors,Second Round
