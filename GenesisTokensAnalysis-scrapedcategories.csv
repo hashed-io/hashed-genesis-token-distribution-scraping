@@ -190,7 +190,7 @@ Scraped Label,Category,Subcategory
 "Airdrops",Budgets,Community
 "DappDeploymentHostingReward",Budgets,Ecosystem
 "ParachainCrowdloans",Parachain,Crowdloan
-"EcoTreasury&Marketing",,
+"EcoTreasury&Marketing",Budgets,Marketing
 "CollatorNodeReward",Budgets,Ecosystem
 "Crowdloan&Pledge",Parachain,Crowdloan
 "Development&EngineeringGrants",Budgets,Developers
@@ -257,7 +257,7 @@ Scraped Label,Category,Subcategory
 "PCXHolders",Budgets,Community
 "CIDNFTMining",Budgets,Community
 "Council",Founders,Founders
-"Giveaway",Budgets,Ecosystem 
+"Giveaway",Budgets,Ecosystem
 "Treasure&Reserves",Reserve,Reserve
 "ProtocolReserve",Reserve,Reserve
 "StrategicPartners&Advisors",Investors,Second Round
