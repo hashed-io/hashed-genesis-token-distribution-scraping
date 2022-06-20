@@ -31,6 +31,10 @@ class SrcItem(scrapy.Item):
     circulation_supply = scrapy.Field()
     market_cap = scrapy.Field()
 
+    token_info = scrapy.Field()
+
+    coingecko = scrapy.Field()
+
     token_distribution = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
 
     link = scrapy.Field()
