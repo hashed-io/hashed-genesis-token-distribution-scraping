@@ -238,7 +238,7 @@ class GenesisToken(scrapy.Spider):
 
     def start_requests(self):
         
-        urls = get_url_batch(3)
+        urls = get_url_batch(9)
 
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
