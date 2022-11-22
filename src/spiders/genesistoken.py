@@ -5,7 +5,7 @@ import json
 from src.items import SrcItem
 from scrapy.loader import ItemLoader
 
-# $ scrapy shell "https://parachains.info/details/nodle#token"
+# $ scrapy shell "https://parachains.info/details/dora_factory#token"
 
 # parachain_text
 
@@ -44,8 +44,8 @@ def format_text(value, dirty, format):
         return ""
 
 def get_url_batch(n):
-    if n == 1:
-        urls = [
+    # if n == 1:
+    urls = [
                 'https://parachains.info/details/dora_factory#token',
                 'https://parachains.info/details/acala_network#token'
                 'https://parachains.info/details/karura#token',
@@ -63,10 +63,10 @@ def get_url_batch(n):
                 'https://parachains.info/details/parallel_finance#token',
                 'https://parachains.info/details/heiko_finance#token',
                 'https://parachains.info/details/centrifuge#token',
-                'https://parachains.info/details/moonbeam#token'
-                ]
-    if n==2:
-        urls = [
+                'https://parachains.info/details/moonbeam#token',
+    #             ]
+    # if n==2:
+    #     urls = [
             'https://parachains.info/details/moonriver#token',
             'https://parachains.info/details/altair#token',
             'https://parachains.info/details/litentry#token',
@@ -86,9 +86,10 @@ def get_url_batch(n):
             'https://parachains.info/details/kilt_protocol#token',
             'https://parachains.info/details/robonomics#token',
             'https://parachains.info/details/sora#token',
-            'https://parachains.info/details/encointer#token']
-    if n==3:
-        urls = [
+            'https://parachains.info/details/encointer#token'
+    #         ]
+    # if n==3:
+    #     urls = [
             'https://parachains.info/details/picasso#token',
             'https://parachains.info/details/composable_finance#token',
             'https://parachains.info/details/polkadex#token',
@@ -108,9 +109,10 @@ def get_url_batch(n):
             'https://parachains.info/details/totem#token',
             'https://parachains.info/details/geminis#token',
             'https://parachains.info/details/bit_country#token',
-            'https://parachains.info/details/subdao#token']
-    if n==4:
-        urls = [
+            'https://parachains.info/details/subdao#token',
+    #         ]
+    # if n==4:
+    #     urls = [
             'https://parachains.info/details/konomi#token',
             'https://parachains.info/details/kylin_network#token',
             'https://parachains.info/details/standard_protocol#token',
@@ -130,9 +132,10 @@ def get_url_batch(n):
             'https://parachains.info/details/subgame_gamma#token',
             'https://parachains.info/details/laminar#token',
             'https://parachains.info/details/shadows_network#token',
-            'https://parachains.info/details/polkasmith#token']
-    if n==5:
-        urls = [
+            'https://parachains.info/details/polkasmith#token',
+    #         ]
+    # if n==5:
+    #     urls = [
             'https://parachains.info/details/polkafoundry#token',
             'https://parachains.info/details/subspace#token',
             'https://parachains.info/details/trustbase#token',
@@ -152,9 +155,10 @@ def get_url_batch(n):
             'https://parachains.info/details/dock#token',
             'https://parachains.info/details/ajuna_network#token',
             'https://parachains.info/details/stonedefi#token',
-            'https://parachains.info/details/stafi#token']
-    if n==6:
-        urls = [
+            'https://parachains.info/details/stafi#token',
+    #         ]
+    # if n==6:
+    #     urls = [
             'https://parachains.info/details/nsure_network#token',
             'https://parachains.info/details/akropolis#token',
             'https://parachains.info/details/deeper_network#token',
@@ -174,10 +178,10 @@ def get_url_batch(n):
             'https://parachains.info/details/snowfork#token',
             'https://parachains.info/details/tea_project#token',
             'https://parachains.info/details/chainlink#token',
-            'https://parachains.info/details/subquery#token'
-          ]
-    if n==7:
-        urls = [
+            'https://parachains.info/details/subquery#token',
+    #       ]
+    # if n==7:
+    #     urls = [
             'https://parachains.info/details/joystream#token',
             'https://parachains.info/details/bluzelle#token',
             'https://parachains.info/details/reef#token',
@@ -197,9 +201,10 @@ def get_url_batch(n):
             'https://parachains.info/details/edgeware#token',
             'https://parachains.info/details/chainx#token',
             'https://parachains.info/details/mangata_finance#token',
-            'https://parachains.info/details/bondly#token']
-    if n==8: 
-        urls = [
+            'https://parachains.info/details/bondly#token',
+    #         ]
+    # if n==8: 
+    #     urls = [
             'https://parachains.info/details/rai_finance#token',
             'https://parachains.info/details/bandot#token',
             'https://parachains.info/details/energy_web#token',
@@ -219,9 +224,10 @@ def get_url_batch(n):
             'https://parachains.info/details/sunrise_protocol#token',
             'https://parachains.info/details/everlife_ai#token',
             'https://parachains.info/details/summa_network#token',
-            'https://parachains.info/details/dego_finance#token']
-    if n==9: 
-        urls =[
+            'https://parachains.info/details/dego_finance#token',
+    #         ]
+    # if n==9: 
+    #     urls =[
             'https://parachains.info/details/shift#token',
             'https://parachains.info/details/curio#token',
             'https://parachains.info/details/hazel#token',
@@ -238,7 +244,7 @@ class GenesisToken(scrapy.Spider):
 
     def start_requests(self):
         
-        urls = get_url_batch(9)
+        urls = get_url_batch(1)
 
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -270,6 +276,15 @@ class GenesisToken(scrapy.Spider):
         item["name"] = token_name
         item["relay_chain"] = response.css("div.parachain_text::text").get().replace("\n", "")
         item["link"] = response.url
+
+        try:
+            chaing_tag = response.css('span.rounded-pill::text').get().replace("\n", "")
+            self.logger.info(chaing_tag)
+        except:
+            chaing_tag = "None"
+            self.logger.info(chaing_tag)
+        
+        item["chain_tag"] = chaing_tag
 
         try:
             market_supply = response.css('div.row.tokenomic_row')[2].re('\d+')

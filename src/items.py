@@ -26,6 +26,8 @@ def format_item(value):
 
 class SrcItem(scrapy.Item):
     name = scrapy.Field()
+    chain_tag = scrapy.Field()
+    
     relay_chain = scrapy.Field(input_processor = MapCompose(remove_tags), output_procesor = TakeFirst())
     market_supply = scrapy.Field(input_processor = MapCompose(remove_tags, format_item), output_procesor = TakeFirst())
     circulation_supply = scrapy.Field()
